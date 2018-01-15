@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>HDFC_C__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>HDFCS</relationshipLabel>
+        <relationshipName>HDFCS</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields><fields>
+        <fullName>HDFC_L__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup relation</description>
+        <externalId>false</externalId>
+        <label>HDFC</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>HDFC__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <valueField>$Source.RecordTypeId</valueField>
+            </filterItems>
+            <filterItems>
+                <field>HDFC__c.HDFC_C__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.HDFC_C__c</valueField>
+            </filterItems>
+            <infoMessage>HDFC LookUp</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>HDFC__c</referenceTo>
+        <relationshipLabel>HDFCS</relationshipLabel>
+        <relationshipName>HDFCS</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>HDFC__c</fullName>
+        <description>This is the custom field creation.</description>
+        <displayFormat>H-{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>HDFC</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>This Is HDFC Bank Field.</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><enableReports>false</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><label>HDFC</label><nameField>
+        <label>HDFC Name</label>
+        <type>Text</type>
+    </nameField><pluralLabel>HDFCS</pluralLabel><searchLayouts /><sharingModel>ControlledByParent</sharingModel><fieldSets>
+        <fullName>HDFC</fullName>
+        <description>Banks</description>
+        <label>HDFC</label>
+    </fieldSets><recordTypes>
+        <fullName>HDFC_RF</fullName>
+        <active>true</active>
+        <description>This is the record file for HDFC</description>
+        <label>HDFC RF</label>
+    </recordTypes></CustomObject>

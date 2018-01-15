@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"><sharingOwnerRules>
+        <fullName>My_Records</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>My Records for HDFC bank</description>
+        <label>My Records</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules></SharingRules>
